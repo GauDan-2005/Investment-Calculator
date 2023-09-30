@@ -1,14 +1,16 @@
 import React from "react";
 
-import "./Footer.css";
+import Styles from "./Footer.module.css";
 
 function Footer() {
   const currYear = new Date().getFullYear();
 
   return (
-    <div>
-      <hr className="hr-thin" />
-      <p className="footer-text">© Copyright GauravSingh {currYear}</p>
+    <div className={Styles.footer}>
+      <hr className={Styles["hr-thin"]} />
+      <p className={Styles["footer-text"]}>
+        © Copyright GauravSingh {currYear}
+      </p>
     </div>
   );
 }

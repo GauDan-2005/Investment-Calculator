@@ -5,6 +5,8 @@ import Footer from "./components/static/Footer";
 import InvForm from "./components/inputForm/InvForm";
 import InvTable from "./components/invTable/InvTable";
 
+import Styles from "./App.module.css";
+
 function App() {
   const [dataTable, setDataTable] = useState([]);
 
@@ -13,11 +15,11 @@ function App() {
   }
 
   return (
-    <div>
+    <div className={Styles.main}>
       <Header />
       <InvForm getData={TableMaker} />
       {dataTable.length === 0 ? (
-        <p className="fallback">There is No Data Available.</p>
+        <p className={Styles.fallback}>There is No Data Available.</p>
       ) : (
         <InvTable dataTable={dataTable} />
       )}

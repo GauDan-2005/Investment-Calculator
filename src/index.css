@@ -6,15 +6,11 @@
 
 body {
   margin: 0;
+  /* padding: 0; */
   font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #242a28; */
   background: radial-gradient(#303b37, #1a1f1d);
   color: #e1eeeb;
-}
-
-.fallback {
-  font-size: 1.5rem;
-  text-align: center;
 }
